@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andr&#233; Win 10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-30 12:29:12 "/>
+        <attribute name="created" value="QW5kcsOpIFdpbiAxMDtERVNLVE9QLTJHTDNHTjI7MjAyMS0wNi0zMDsiMTI6MTI6MzAgIjszMjkz"/>
+        <attribute name="edited" value="QW5kcsOpIFdpbiAxMDtERVNLVE9QLTJHTDNHTjI7MjAyMS0wNi0zMDsiMTI6Mjk6MTIgIjsxOzM0MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cart&#227;o" type="Boolean" array="False" size=""/>
+            <declare name="n&#250;mero" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cart&#227;o"/>
+            <comment text="S&#243; de colocar cart&#227;o dentro da condi&#231;&#227;o j&#225; serve. pois ele &#233; boleano. s&#243; temos que dizer se &#233; &quot;true&quot; ou &quot;false&quot; em ingl&#234;s. "/>
+            <if expression="cart&#227;o">
+                <then>
+                    <input variable="n&#250;mero"/>
+                </then>
+                <else>
+                    <output expression="&quot;sem cart&#227;o n&#227;o pode prosseguir, sorry&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

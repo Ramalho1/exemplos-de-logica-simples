@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andr&#233; Win 10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-29 11:44:58 "/>
+        <attribute name="created" value="QW5kcsOpIFdpbiAxMDtERVNLVE9QLTJHTDNHTjI7MjAyMS0wNi0yODsiMTE6Mjg6NTYgIjszMzE0"/>
+        <attribute name="edited" value="QW5kcsOpIFdpbiAxMDtERVNLVE9QLTJHTDNHTjI7MjAyMS0wNi0yOTsiMTE6NDQ6NTggIjsxOzM0MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, soma" type="Real" array="False" size=""/>
+            <declare name="frase1" type="String" array="False" size=""/>
+            <declare name="frase2" type="String" array="False" size=""/>
+            <declare name="Obs" type="String" array="False" size=""/>
+            <declare name="Obs2" type="String" array="False" size=""/>
+            <input variable="Obs"/>
+            <input variable="Obs2"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <assign variable="soma" expression="nota1+nota2+nota3+nota4"/>
+            <output expression="nota1" newline="True"/>
+            <output expression="nota2" newline="True"/>
+            <output expression="nota3" newline="True"/>
+            <output expression="nota4" newline="True"/>
+            <output expression="Obs" newline="True"/>
+            <output expression="media" newline="True"/>
+            <output expression="Obs2" newline="True"/>
+            <output expression="soma" newline="True"/>
+            <if expression="media&gt;6">
+                <then>
+                    <input variable="frase1"/>
+                    <output expression="frase1" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andr&#233; Win 10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-30 06:38:20 "/>
+        <attribute name="created" value="QW5kcsOpIFdpbiAxMDsgREVTS1RPUC0yR0wzR04yOyAyMDIxLTA2LTMwOyAwMzozMjo1OCA7IDMzMzM="/>
+        <attribute name="edited" value="QW5kcsOpIFdpbiAxMDsgREVTS1RPUC0yR0wzR04yOyAyMDIxLTA2LTMwOyAwNjozODoyMCA7IDMzMzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, m&#233;dia" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu nome: &quot;"/>
+            <input variable="nome"/>
+            <output expression="&quot;digite seu sobrenome: &quot;"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Agora digite as notas na sequ&#234;ncia&quot;"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <comment text="Voc&#234; precisa colocar espa&#231;o depois da vari&#225;vel lida para colocar o &quot;e&quot; comercial e concatenar... "/>
+            <output expression="&quot;Nota1= &quot; &amp;nota1 &amp; &quot;  Nota2= &quot; &amp;nota2 &amp; &quot;  Nota3= &quot; &amp;nota3 &amp; &quot;  Nota4= &quot; &amp;nota4"/>
+            <assign variable="m&#233;dia" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="&quot;sua m&#233;dia ser&#225;: &quot; &amp;m&#233;dia"/>
+            <output expression="&quot;At&#233; a pr&#243;xima &quot; &amp;nome &amp; &quot; &quot; &amp;sobrenome"/>
+        </body>
+    </function>
+</flowgorithm>

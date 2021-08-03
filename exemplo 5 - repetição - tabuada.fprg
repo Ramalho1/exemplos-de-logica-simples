@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andr&#233; Win 10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-30 11:13:25 "/>
+        <attribute name="created" value="QW5kcsOpIFdpbiAxMDsgREVTS1RPUC0yR0wzR04yOyAyMDIxLTA2LTMwOyAxMDozODo1NSA7IDMzMzQ="/>
+        <attribute name="edited" value="QW5kcsOpIFdpbiAxMDsgREVTS1RPUC0yR0wzR04yOyAyMDIxLTA2LTMwOyAxMToxMzoyNSA7IDMzMjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n&#250;mero, limite, soma" type="Integer" array="False" size=""/>
+            <assign variable="n&#250;mero" expression="9"/>
+            <assign variable="limite" expression="90"/>
+            <assign variable="soma" expression="1"/>
+            <while expression="n&#250;mero&lt;=limite">
+                <output expression="&quot;9&quot; &amp;&quot; x &quot; &amp;soma &amp;&quot; = &quot; &amp;n&#250;mero"/>
+                <assign variable="soma" expression="soma+1"/>
+                <assign variable="n&#250;mero" expression="n&#250;mero+9"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
